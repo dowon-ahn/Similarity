@@ -1,9 +1,8 @@
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SimilarityTest {
+class LengthTest {
 
     @Test
     void testSimilarity() {
@@ -11,7 +10,8 @@ class SimilarityTest {
         String str2 = "AAE";
 
         Similarity sim = new Similarity();
-        assertEquals(30, sim.calculateScoreByLength(str1, str2));
+        assertEquals(30d, sim.calculateScoreByLength(str1, str2));
     }
+
 
 }
