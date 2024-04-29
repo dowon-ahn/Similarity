@@ -5,6 +5,7 @@ import java.util.Set;
 public class Similarity {
 
     public static final int LENGTH_MIN_POINT = 0;
+    public static final int ALPHA_MIN_POINT = 0;
     public static final int LENGTH_MAX_POINT = 60;
     public static final int ALPHA_MAX_POINT = 40;
 
@@ -30,7 +31,7 @@ public class Similarity {
 
         int totalCnt = getTotalCnt(set1, set2);
         if(totalCnt == str1.length() + str2.length()){
-            return LENGTH_MIN_POINT;
+            return ALPHA_MIN_POINT;
         }
 
         if(str1.length() == str2.length() && totalCnt == str1.length()){
